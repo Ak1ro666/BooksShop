@@ -10,7 +10,6 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 		test: /\.s[ac]ss$/i,
 		use: [
 			`${isDev ? 'style-loader' : MiniCssExtractPlugin.loader}`,
-			'css-modules-typescript-loader',
 			{
 				loader: 'css-loader',
 				options: {
@@ -29,6 +28,7 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
 		use: 'ts-loader',
 		exclude: /node_modules/,
 	};
+
 
 	return [typescriptLoader, cssLoader];
 }

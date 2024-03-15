@@ -1,0 +1,47 @@
+@import '@/app/styles/animation';
+
+.slider {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	& > .slides {
+		margin-bottom: 17px;
+	}
+
+	& > div img {
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		opacity: 0;
+		visibility: hidden;
+		display: none;
+		pointer-events: none;
+
+		&.active {
+			visibility: visible;
+			display: block;
+			animation: 0.3s fade forwards;
+		}
+	}
+
+	& > .slidesNavigation {
+		display: flex;
+		align-items: center;
+		column-gap: 10px;
+		margin-bottom: 105px;
+
+		& > li {
+			width: 12px;
+			height: 12px;
+			background-color: #efeef6;
+			cursor: pointer;
+			border-radius: 100%;
+
+			&.active {
+				background-color: #9e98dc;
+			}
+		}
+	}
+}
+

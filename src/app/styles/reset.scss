@@ -5,9 +5,8 @@
 }
 
 body {
-	font-family:
-		system-ui,
-		-apple-system;
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
 }
 
 ul {
@@ -33,9 +32,11 @@ button {
 
 button {
 	cursor: pointer;
+	background-color: transparent;
 }
 
 img {
 	max-width: 100%;
 	display: block;
 }
+

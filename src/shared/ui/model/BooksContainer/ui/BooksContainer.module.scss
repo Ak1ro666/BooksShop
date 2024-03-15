@@ -1,0 +1,14 @@
+@import '@/app/styles/animation';
+
+.container {
+	max-width: 955px;
+	width: 100%;
+	padding: 0 15px;
+	margin-right: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 76px;
+	grid-row-gap: 97px;
+	margin-bottom: 96px;
+}
+

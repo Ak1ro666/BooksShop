@@ -1,0 +1,21 @@
+.buttons {
+	display: flex;
+	align-items: center;
+	column-gap: 40px;
+	position: relative;
+
+	& .count {
+		position: absolute;
+		font-weight: 500;
+		font-size: 10px;
+		text-transform: capitalize;
+		color: #fff;
+		width: 13px;
+		height: 13px;
+		border-radius: 100%;
+		background-color: #ff353a;
+		right: -5px;
+		bottom: -3px;
+	}
+}
+

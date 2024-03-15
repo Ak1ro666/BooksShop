@@ -1,0 +1,39 @@
+.container {
+	position: absolute;
+	left: 0;
+	z-index: 999;
+	max-width: 416px;
+	width: 100%;
+	padding: 45px 15px 80px 158px;
+	background-color: #efeef6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 45px;
+	padding-bottom: 80px;
+
+	.list {
+		display: inline-flex;
+		flex-direction: column;
+		row-gap: 23px;
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+
+		& > li {
+			font-weight: 500;
+			font-size: 12px;
+			text-transform: capitalize;
+			color: #5c6a79;
+			cursor: pointer;
+			position: relative;
+
+			&.active {
+				font-weight: 700;
+				font-size: 16px;
+				color: #1c2a39;
+			}
+		}
+	}
+}
+
